@@ -16,10 +16,10 @@ int main() {
 	}*/
 
 
-//Test HasBalancedParentheses();
+/*Test HasBalancedParentheses();
  string statement1 = "((())())";
- statement1 = "(((())(())())";
- //cout << HasBalancedParentheses(statement1) << endl;
+ statement1 = "(((()()((())))())())(";
+ cout << HasBalancedParentheses(statement1) << endl;
  
  bool test = HasBalancedParentheses(statement1);
 
@@ -28,15 +28,14 @@ int main() {
  }
  else if (!test) {
    cout << "Is it Ballanced: No" << endl;
- }
+ }*/
 
-/* Test InDogish();
+// Test InDogish();
  string mydogs = "dpoags";
  If(InDogish(mydogs)){
    	cout << "Part of Dogish? " << std:endl;
  }
 
  // Test bool InXish(sting mytext, sting myword);
-*/
 }
 

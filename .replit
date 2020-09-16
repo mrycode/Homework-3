@@ -1,2 +1,2 @@
 language = "bash"
-run = "clang++-7 -pthread -std=c++11 -o main main.cpp reversearray.cpp has_balanced_parentheses.cpp;  ./main"
+run = "clang++-7 -pthread -std=c++11 -o main main.cpp reversearray.cpp has_balanced_parentheses.cpp in_dogish.cpp;  ./main"
