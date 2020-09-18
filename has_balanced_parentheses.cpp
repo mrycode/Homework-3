@@ -7,6 +7,9 @@
 
 bool HasBalancedParentheses(string input) {
   vector<int> balance_vector (0);
+  if (input == "") {
+    return true;
+  }
   for (int string_index = 0; string_index < input.length(); string_index++) {
     if (input[string_index] == '(') {
       balance_vector.push_back('(');
