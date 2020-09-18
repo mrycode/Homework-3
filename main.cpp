@@ -45,11 +45,11 @@ cout << endl << endl;*/
    	cout << "Part of Dogish? " << endl;
  }*/
  
+ cout << InDogish(mydogs) << endl;
  //cout << InDogish(mydogs) << endl;
- //cout << InDogish(mydogs) << endl;
- cout << InXish("inthecorrections", "incorrect") << endl;
- cout << InXish("fsgsjhdso", "dogs") << endl;
- cout << InXish("inthecorrections", "incorrect") << endl;
+ //cout << InXish("inthecorrections", "incorrect") << endl;
+ //cout << InXish("fsgsjhdso", "dogs") << endl;
+ //cout << InXish("inthecorrections", "incorrect") << endl;
  
  //cout << mydogs.substr(1,mydogs.length()) << endl;
  // Test bool InXish(sting mytext, sting myword);

@@ -69,6 +69,29 @@ bool DogishHelper(string word, char letter){
 */
 
 bool InDogish(string input) {
+  string key_word = "dog";
+  if (input == "") {
+    return false;
+  }
+  cout << "input: " << input << endl;
+  cout << "x: " << key_word << endl;
+  if (input[0] == key_word[0]) {
+    cout << "Found: " << key_word[0] << endl;
+    if (key_word.length() == 1) {
+      return true;
+    }
+    else {
+      return InXish(input.substr(1,input.length()),key_word.substr(1,key_word.length()));
+    }
+  }
+  else {
+    return InXish(input.substr(1,input.length()),key_word);
+  }
+
+
+
+
+  /*
   bool static d = false;
   bool static o = false;
   bool static g = false;
@@ -90,7 +113,7 @@ bool InDogish(string input) {
   }
   else {
     return InDogish(input.substr(1,input.length()));
-  }
+  }*/
 }
 
 
