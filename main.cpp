@@ -2,8 +2,8 @@
 #include <string>
 //#include "reversearray.h"
 //#include "has_balanced_parentheses.h"
-#include "in_dogish.h"
-//#include "hw3.h"
+//#include "in_dogish.h"
+#include "hw3.h"
 
 using namespace std;
 
@@ -40,14 +40,16 @@ cout << endl << endl;*/
  string mydogs = "dpoags";
 
  //cout << InDogish(mydogs) << endl;
- mydogs = "gsjhdso";
+ mydogs = "fsgsjhdso";
  /*If(InDogish(mydogs)){
    	cout << "Part of Dogish? " << endl;
  }*/
  
  //cout << InDogish(mydogs) << endl;
  //cout << InDogish(mydogs) << endl;
- cout << InXish("mayddfosgfs", "mydogs") << endl;
+ cout << InXish("inthecorrections", "incorrect") << endl;
+ cout << InXish("fsgsjhdso", "dogs") << endl;
+ cout << InXish("inthecorrections", "incorrect") << endl;
  
  //cout << mydogs.substr(1,mydogs.length()) << endl;
  // Test bool InXish(sting mytext, sting myword);

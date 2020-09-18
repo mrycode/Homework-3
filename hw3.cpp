@@ -48,6 +48,20 @@ bool HasBalancedParentheses(string input) {
 }
 
 
+//Helper
+bool DogishHelper(string word, char letter){
+  if(word == "") {
+    return false;
+  }
+  cout << word << endl;
+  if(word[0] == letter) {
+    ///COMPLETE THIS TO HELP WITH RECURSION SETUP 
+    return true;
+  } 
+  else {
+    return DogishHelper(word.substr(1,word.length()), letter);
+  }
+}
 
 /****
 * PSEUDOCODE:
@@ -78,3 +92,59 @@ bool InDogish(string input) {
     return InDogish(input.substr(1,input.length()));
   }
 }
+
+
+/****
+* PSEUDOCODE:
+*
+*/
+
+
+bool InXish(string input, string x) {
+  if (input == "") {
+    return false;
+  }
+  cout << "input: " << input << endl;
+  cout << "x: " << x << endl;
+  if (input[0] == x[0]) {
+    cout << "Found: " << x[0] << endl;
+    if (x.length() == 1) {
+      return true;
+    }
+    else {
+      return InXish(input.substr(1,input.length()),x.substr(1,x.length()));
+    }
+  }
+  else {
+    return InXish(input.substr(1,input.length()),x);
+  }
+}
+
+/*
+bool InXish(string input, string x) {
+  int static counter = 0;
+  int static x_index = 0;
+  if (input == "" || x_index == x.length()) {
+    counter = 0;
+    x_index = 0;
+    return false;
+  }
+  if (DogishHelper(input, x[x_index]) && counter == x_index) {
+    cout << "found : " << x[x_index] << endl;
+    counter++;
+    x_index++;
+    if (counter == x.length()) {
+      counter = 0;
+      x_index = 0;
+      return true;
+    }
+    else {
+      return InXish(input.substr(1,input.length()), x);
+    }
+  }
+  else {
+    counter = 0;
+    x_index = 0;
+    return false;
+  }
+}*/

@@ -16,4 +16,6 @@ bool DogishHelper(string word, char letter);
 
 bool InDogish(string input);
 
+bool InXish(string input, string x);
+
 #endif

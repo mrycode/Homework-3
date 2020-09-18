@@ -42,23 +42,24 @@ bool InDogish(string input) {
 
 
 bool InXish(string input, string x) {
-  int static counter = x.length();
   int static x_index = 0;
   if (input == "" || x_index == x.length()) {
-    counter = 0;
+    x_index = 0;
     return false;
   }
   if (DogishHelper(input, x[x_index])) {
+    cout << "found : " << x[x_index] << endl;
     x_index++;
-    counter--;
+    if (x_index+1 == x.length()) {
+      x_index = 0;
+      return true;
+    }
+    else {
+      return InXish(input.substr(1,input.length()), x);
+    }
   }
   else {
+    x_index = 0;
     return false;
   }
-  
-  if (counter == 0) {
-    return true;
-  }
-
-  return InXish(input.substr(1,input.length()), x);
 }
